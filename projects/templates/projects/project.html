@@ -1,0 +1,358 @@
+{% extends 'base_project.html' %}
+{% load static from staticfiles %}
+
+
+
+{% block content %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+  <ol class+"carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+    <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<section id="banner">
+        <div class="jumbotron jumbotron-fluid bg-light text-muted text-center">
+              <div class="container">
+                <h2>Final Semester Students Projects</h2>
+
+  </div>
+</section>
+
+<div class="container my-3 p-4">
+  <h4 class="text-primary">Final year projects</h4>
+  <p class="text-mutesd" style="font-size:18px;color:#555;">The final year project is the culmination of the degree – it gives students a chance to demonstrate all they have learned. The project module is very different from other modules. Although students are supervised, the onus is on the student to define the problem boundaries, to investigate possible solutions, and to present the results in writing, verbally and in action. Apart from an initial briefing session there are no formal lectures to attend. Teaching consists of regular individual/small group meetings to discuss progress. For assessment, students submit reports of their progress and final results, and give in-person presentations and demonstrations of their work.</p>
+
+</div>
+
+<!-----------------------------Background imageslide ---------------------------------------->
+
+
+
+
+<section id="main-content">
+  <div class="container">
+
+          <div class="row">
+          <div class="col-lg-8 mb-2">
+
+              <section id="carousel">
+                  <div id="carousel-home" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-home" data-slide-to="1"></li>
+                            <li data-target="#carousel-home" data-slide-to="2"></li>
+                            <li data-target="#carousel-home" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img class="d-block w-100"   src="{% static 'img/scoreckt.jpg' %}"  alt="First slide">
+                                      <div class="carousel-caption">
+                              <!--           <h3><a href="https://www.pubg.com/news/" class="nav-link">Latest News</a></h3>
+                              -->
+
+                                      </div>
+                                </div>
+                                <div class="carousel-item">
+                                   <img class="d-block w-100" src="{% static 'img/detelab.jpg' %}" alt="Second slide">
+                                     <div class="carousel-caption">
+                                    <!--   <h3>NIELIT DIPLOMA AIZAWL</h3>
+                                        <p>2015 batch</p>    -->
+
+                                     </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                <img class="d-block w-100" src="{% static 'img/detelab2.jpg' %}" alt="Third slide">
+                                     <div class="carousel-caption">
+
+                                     </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/detelab1.jpg' %}" alt="Fourth slide">
+                                     <div class="carousel-caption">
+
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+
+                   </div>
+                </section>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------main content --------------------------------------------------->
+
+<div class="container" id="projects">
+  <h2>Students Project</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Electronics..
+    </button>
+    <div class="dropdown-menu">
+        <li><a href="#dete15" class="dropdown-item"  data-toggle="tab">2015 batch</a></li>
+
+      <a class="dropdown-item" href="#">2016 batch</a>
+    </div>
+  </div>
+
+
+  <div class="btn-group">
+
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Computer..
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{% url 'projects:projectDcse' %}">2015 batch</a>
+      <a class="dropdown-item" href="#">2016 batch</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-content projects">
+  <div class="tab-pane fade_in active" id="Home">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h4 class="text-center my-1 text-muted">Click the buttons to select the project you want to see </h4>
+        <h4 class="text-center my-1 text-muted">Projects are kept in batch wise </h4>
+    </div>
+  </div>
+  </div>
+
+
+<!------------------------- projects table ----------------------->
+<div class="tab-pane fade" id="dete15">
+  <p>2015 batch DETE</p>
+  <p>Click the title you want to view</p>
+  <table class="table table-bordered table-hover text-dark bg-secondary">
+    <thead>
+      <tr>
+        <th scope="col">Group</th>
+        <th scope="col">Name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="#scoreboard" class="dropdown-item"  data-toggle="tab">Electronic Scoreboard</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><a href="#digitalClock" class="dropdown-item"  data-toggle="tab">Digital Clock</td>
+
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td><a href="#Inverter" class="dropdown-item"  data-toggle="tab">Inverter</td>
+
+            </tr>
+            <tr>
+            <th scope="row">4</th>
+            <td><a href="#autoOff" class="dropdown-item"  data-toggle="tab">Automatic water pump controller</td>
+
+            </tr>
+          </tbody>
+        </table>
+</div>
+
+
+
+
+
+  <!--------------------------------------------Electronic Scoreboard------------------------------------------------>
+
+  <div class="tab-pane fade" id="scoreboard">
+
+
+    <div class="container my-3 p-4">
+      <p style="font-size:25px;color:#333;">DETE 2015 batch</p>
+      <h4 class="text-primary">1.Electronic ScoreBoard</h4>
+      <img src="{% static 'img/scoreboard.jpg' %}" width="50%" height="50%"  class="float-left" alt="">
+      <p class="text-mutesd" style="font-size:18px;color:#555;"> In this project “DIGITAL SCOREBOARD”. We used this scoreboard to display the result or the point of the game and other sport items like volleyball, Basketball, Badminton, Table Tennis, Hockey and Rugby etc. In digital score board we can count up the number from 0 to 99. The goal was a product that is easy to use, reliable and efficient for the previously stated purposed.
+      </p>
+      <br><br><br><br><br><br><br>
+      <img src="{% static 'img/scoreckt.jpg' %}" width="50%" height="50%" class="float-right" alt="">
+      <h4>Component Used</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">1.IC CD45193BE (Binary Counter (1-15).</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">2.IC CD4543b (Seven segment Decoder).</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">3.IC SN74ls08 AND Gate.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">4.IC NE555N.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">5.Resistor 1K, 10K, 3.3K.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">6.Push Up Non-Lock Switch.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">7.Jumper wire.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">8.Pcb Board.</p>
+   <br>
+   <br>
+   <br>
+
+      <h4>Detail</h4>
+      <p class="text-mutesd" style="font-size:20px;color:#555;">1.IC CD45193B</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Up/down difference counting.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Multistage ripple counting</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Synchronous frequency divider.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">A/D and D/A conversion.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Programmable binary or BCD counting.</p>
+      <br>
+      <p class="text-mutesd" style="font-size:20px;color:#555;">2.IC CD4543B</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Instrument display driver.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Dashboard display driver.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Computer/calculator display driver.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Timing device driver(clocks, watch, timers).</p>
+      <br>
+      <p class="text-mutesd" style="font-size:20px;color:#555;">3.SN74LS08</p>
+      <p class="text-mutesd" style="font-size:20px;color:#555;">4.IC NE555N</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Precision timing.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Pulse generation.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Sequential timing.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Time delay generation.</p>
+      <p class="text-mutesd" style="font-size:18px;color:#555;">Pulse width modulation.</p>
+
+
+    </div>
+
+
+  </div>
+
+<!--------------------------------------------------Digital Clock ----------------------------------------------------->
+
+
+  <div class="tab-pane fade" id="digitalClock">
+
+    <p>DETE 2015 batch</p>
+    <div class="container my-3 p-4">
+      <h4 class="text-primary">1.Digital Clock</h4>
+      <img src="{% static 'img/scoreboard.jpg' %}" width="50%" height="50%"  class="float-left" alt="">
+      <p class="text-mutesd" style="font-size:18px;color:#555;"> In this project “DIGITAL SCOREBOARD”. We used this scoreboard to display the result or the point of the game and other sport items like volleyball, Basketball, Badminton, Table Tennis, Hockey and Rugby etc. In digital score board we can count up the number from 0 to 99. The goal was a product that is easy to use, reliable and efficient for the previously stated purposed.
+      </p>
+      <br><br><br><br><br><br><br>
+      <img src="{% static 'img/scoreckt.jpg' %}" width="50%" height="50%" class="float-right" alt="">
+      <h4>Component List</h4>
+
+      <h4 class="text-primary">2.Digital Clock</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+      <h4 class="text-primary">3.Inverter</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+      <h4 class="text-primary">4.Automatic off Water Pump</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!------------------------------------------------------Inverter------------------------------------------------------------->
+
+  <div class="tab-pane fade" id="Inverter">
+
+    <p>DETE 2015 batch</p>
+    <div class="container my-3 p-4">
+      <h4 class="text-primary">1.Inverter</h4>
+      <img src="{% static 'img/scoreboard.jpg' %}" width="50%" height="50%"  class="float-left" alt="">
+      <p class="text-mutesd" style="font-size:18px;color:#555;"> In this project “DIGITAL SCOREBOARD”. We used this scoreboard to display the result or the point of the game and other sport items like volleyball, Basketball, Badminton, Table Tennis, Hockey and Rugby etc. In digital score board we can count up the number from 0 to 99. The goal was a product that is easy to use, reliable and efficient for the previously stated purposed.
+      </p>
+      <br><br><br><br><br><br><br>
+      <img src="{% static 'img/scoreckt.jpg' %}" width="50%" height="50%" class="float-right" alt="">
+      <h4>Component List</h4>
+
+      <h4 class="text-primary">2.Digital Clock</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+      <h4 class="text-primary">3.Inverter</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+      <h4 class="text-primary">4.Automatic off Water Pump</h4>
+      <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+    </div>
+
+
+  </div>
+
+<!---------------------------------Automatic Control Water pump-------------------------------------->
+<div class="tab-pane fade" id="autoOff">
+
+  <p>DETE 2015 batch</p>
+  <div class="container my-3 p-4">
+    <h4 class="text-primary">4. Automatic Water pump controller</h4>
+    <img src="{% static 'img/scoreboard.jpg' %}" width="50%" height="50%"  class="float-left" alt="">
+    <p class="text-mutesd" style="font-size:18px;color:#555;"> In this project “DIGITAL SCOREBOARD”. We used this scoreboard to display the result or the point of the game and other sport items like volleyball, Basketball, Badminton, Table Tennis, Hockey and Rugby etc. In digital score board we can count up the number from 0 to 99. The goal was a product that is easy to use, reliable and efficient for the previously stated purposed.
+    </p>
+    <br><br><br><br><br><br><br>
+    <img src="{% static 'img/scoreckt.jpg' %}" width="50%" height="50%" class="float-right" alt="">
+    <h4>Component List</h4>
+
+    <h4 class="text-primary">2.Digital Clock</h4>
+    <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+    <h4 class="text-primary">3.Inverter</h4>
+    <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+    <h4 class="text-primary">4.Automatic off Water Pump</h4>
+    <p class="text-mutesd" style="font-size:18px;color:#555;"></p>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+{% endblock %}

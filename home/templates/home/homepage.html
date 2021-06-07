@@ -1,0 +1,386 @@
+{% extends 'base_layout.html'%}
+{% load static from staticfiles %}
+
+{% block content %}
+
+
+
+         <!-------------------Header------------------->
+
+          <section id="banner">
+                  <div class="jumbotron jumbotron-fluid bg-light text-muted text-center">
+                        <div class="container">
+
+              <h1 class="display-5">The only way to do great work is to love what you do.</h1>
+                              <p class="lead">~Steve Jobs<br></p>
+
+                  </div>
+          </section>
+
+
+         <!-----------------End of Header----------------->
+
+
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="container text-center coordinator p-2" style="font-size:16px;">
+                      <img class="img-fluid my-3 rounded-circle  border border-secondary" src="{% static 'img/Chhungpuia.jpg' %}" alt="hello" height="120" width="120">
+                      <br>
+                      <span  style="font-size:18px; " class="">R.Dengchhunga</span><br>
+                      Co-ordinator<br>Dcse<br>
+
+
+          <!---------------Button trigger modal------------->
+
+
+                      <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#ModalCS">
+                         See Profile
+                      </button>
+
+
+          <!----------------------Modal--------------------->
+
+
+                       <div class="modal fade" id="ModalCS" role="dialog"  aria-hidden="true">
+                         <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                                   <div class="modal-header">
+                                           <h5 class="modal-title" >Modal title</h5>
+                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                           </button>
+                                   </div>
+                                   <div class="modal-body">
+                                          <img class="img-fluid my-3 rounded-circle  border border-secondary"  src="{% static 'img/Chhungpuia.jpg' %}" alt="hello" height="100" width="100">
+                                          <br>
+                                           Dcse<br>Co-ordinator<br>
+                                           <b  style="font-size:15px; color:#444;">R.Dengchhunga</b><br>
+                                           Email-chhungpuia@gmail.com<br>
+                                           ph-986312384<br>
+                                           address-ramhlun south<br>
+                                   </div>
+                                   <div class="modal-footer">
+                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                   </div>
+                           </div>
+                         </div>
+                       </div>
+                 </div>
+             </div>
+
+
+        <div class="col-md-6">
+            <div class="container coordinator text-center p-2" style="font-size:16px;">
+                                 <img class="img-fluid my-3 rounded-circle  border border-secondary"  src="{% static 'img/Okram.jpeg' %}" alt="hello" height="120" width="120">
+                                 <br>  <span  style="font-size:18px;">Okram Manglemba Singh</span><br>
+                                 Co-ordinator<br>Dete<br>
+
+                    <!---------------------Button trigger modal----------------->
+
+                                 <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#ModalET">
+                                   See Profile
+                                 </button>
+
+                    <!-------------------------Modal---------------------------->
+
+                <div class="modal fade" id="ModalET" role="dialog" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                                 <div class="modal-header">
+                                   <h5 class="modal-title">Modal title</h5>
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                   </button>
+                             </div>
+                             <div class="modal-body">
+                                   <img class="img-fluid my-3 rounded-circle  border border-secondary"  src="{% static 'img/Okram.jpeg' %}" alt="hello" height="100" width="100">
+                                   <br>
+                                   Dcse<br>Co-ordinator<br>
+                                   <b  style="font-size:15px; color:#444;">Okram Manglemba Singh</b><br>
+                                   Email-Okram@gmail.com<br>
+                                   ph-+919862888307<br>
+                                   address-tuikual south<br>
+                             </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Main Content-->
+
+    <section id="main-content">
+      <div class="container">
+
+              <div class="row">
+              <div class="col-lg-8 mb-2">
+
+                  <section id="carousel">
+                      <div id="carousel-home" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-home" data-slide-to="1"></li>
+                                <li data-target="#carousel-home" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <a href="https://www.pubg.com/news/">  <img class="d-block w-100"   src="{% static 'img/pubg.jpg' %}" alt="First slide"> </a>
+                                          <div class="carousel-caption">
+                                  <!--           <h3><a href="https://www.pubg.com/news/" class="nav-link">Latest News</a></h3>
+                                  -->
+
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="https://m.mobilelegends.com/en">   <img class="d-block w-100" src="{% static 'img/ml.png' %}"   alt="Second slide"></a>
+                                         <div class="carousel-caption">
+                                        <!--   <h3>NIELIT DIPLOMA AIZAWL</h3>
+                                            <p>2015 batch</p>    -->
+
+                                         </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                    <a href="https://moba.garena.com/">    <img class="d-block w-100" src="{% static 'img/AOV.jpg' %}"   alt="Third slide"> </a>
+                                         <div class="carousel-caption">
+
+                                         </div>
+                                    </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+
+                       </div>
+                    </section>
+
+               </div>
+
+                <!--Right Content-->
+
+
+                <div class="col-lg-4">
+                    <div class="content">
+                      <div class="quicklinks">
+                        <h5 class="text-center py-2 bg-secondary text-white">Quick links</h5>
+                        <ul>
+                              <li><i class="fa fa-calendar mr-3 text-secondary" style="font-size:25px;"></i><a href="">2018-19 academic calendar</a></li>
+                              <li><i class="fa fa-book mr-3 text-secondary" style="font-size:25px;"></i><a href="{% static 'nielit hostel admission.pdf' %}" target="_blank">Nieit Hostel Admission</a></li>
+                              <li><i class="fa fa-book mr-3 text-secondary" style="font-size:25px;"></i><a href="">Dete Syllabus</a></li>
+                              <li><i class="fa fa-university mr-3 text-secondary" style="font-size:25px;"></i><a href="http://www.polylunglei.in/">Mizoram Polytechnic,Lunglei</a></li>
+                              <li><i class="fa fa-university mr-3 text-secondary" style="font-size:25px;"></i><a href="https://womenpolytechnic.mizoram.gov.in/">Women Polytechnic,aizawl</a></li>
+                              <li><i class="fa fa-university mr-3 text-secondary" style="font-size:25px;"></i><a href="http://www.nitmz.ac.in/">NIT Mizoram</a></li>
+                              <li><i class="fa fa-university mr-3 text-secondary" style="font-size:25px;"></i><a href="https://www.mzu.edu.in/index.php/academics/school-of-engineering-technology">MZUEEE</a></li>
+                              <li><i class="fa fa-gavel mr-3 text-secondary" style="font-size:25px;"></i><a href="{% static 'discipline.pdf' %}" target="_blank">Discipline</a></li>
+                              <li><i class="fa fa-sitemap mr-3 text-secondary" style="font-size:25px;"></i><a href="{% static 'feestructure.pdf' %}" target="_blank">Fee Structure</a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+    </section>
+
+        <!------------------------End of main content----------------------->
+
+        <div class="container mb-3 mt-5">
+          <div class="row">
+
+
+
+
+               <div class="col-lg-8 newslist mx-auto  my-3  ">
+                <h5 class="text-center mb-2 mt-2 text-primary">News Update</h5>
+<!--            <h6 class="text-right mt-3 mr-2 text-info"><a href="newspage.php">view all</a></h6>     ---->
+                <div class="ticker mb-2">
+                        <ul id="news" class=" mr-5">
+
+
+
+                          {% for newsDetail in news %}
+
+                                      <li><a href="{% url 'home:newsDetails' title=newsDetail.title %}">{{newsDetail.title}}<span class="badge badge-danger">New</span></a>
+                                    <!--    <p>{{news.body}}</p>   -->
+                                        <p>{{newsDetail.date}}</p>
+                                      </li>
+
+                                  {% endfor %}
+
+
+
+
+  <!--                          <li><a href="MZU-EEE.pdf" target="_blank">Admission Notification MZUEEE-2018<span class="badge badge-danger">New</span></a></li>
+                            <li><a href="nielitadmission.pdf" target="_blank">Nielit admission notice-2018<span class="badge badge-danger">New</span></a></li>
+                            <li><a href="IMG-20180507-WA0001.jpg" target="_blank">Diploma Examination Noticed-2018 <span class="badge badge-danger">New</span></a></li>
+                            <li><a href="IMG-20180507-WA0001.jpg" target="_blank">Attendance eligible for november<span class="badge badge-danger">New</span></a></li>    -->
+
+                        </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 notice">
+                  <pre></pre>
+                  <h5 class="text-center py-2 mb-0 text-light bg-secondary">Noticed</h5>
+                  <div class="noticed">
+                      <ul>
+
+                        {% for noticeDetail in notice %}
+                                            <li><a href="{% url 'home:noticeDetails' title=noticeDetail.title %}">{{noticeDetail.title}}</a>
+
+                                          <!--    <p>{{news.body}}</p>   -->
+                                              <p>{{noticeDetail.date}}</p>
+                                            </li>
+
+                        {% endfor %}
+
+
+
+                            <li><i class="fa fa-calendar mr-2 text-secondary" style="font-size:25px;"></i><a href="https://drive.google.com/open?id=15VmOlsBy9Ggj3JRH46xB972FC5qlFa5A" target="_blank">Diploma Examination timetable jun-2018(practical)</a></li>
+                            <li><i class="fa fa-calendar mr-2 text-secondary" style="font-size:25px;"></i><a href="https://drive.google.com/open?id=1uXqsMdcdb4UWlm27jEwualxwO8nbm-mB" target="_blank">Diploma Examination timetable jun-2018(theory)</a></li>
+                            <li><i class="fa fa-calendar mr-2 text-secondary" style="font-size:25px;"></i><a href="{% static 'dete eligibility 2018.pdf' %}">Dete jan-july eligibility list 2018</a></li>
+                            <li><i class="fa fa-calendar mr-2 text-secondary" style="font-size:25px;"></i><a href="{% static 'dcse eligibility 2018.pdf' %}">Dcse jan-july eligibility list 2018</a></li>
+                            <li><i class="fa fa-bus mr-2 text-secondary" style="font-size:25px;"></i><a href="">Bus Timing</a></li>
+                            <li><i class="fa fa-calendar mr-2 text-secondary" style="font-size:25px;"></i><a href="{% static 'syllabus_lateral_entry_in_b.tech.pdf' %}" target="_blank">MZUEEE syllabus</a></li>
+                     </ul>
+                 </div>
+            </div>
+
+          </div>
+       </div>
+
+
+
+
+         <!---Card column-->
+
+
+          <div class="card-columns container mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/solarPlants.jpg' %}" alt="ringing">
+                    <div class="card-body cardcols">
+                          <h5 class="card-title"><a href="https://www.telegraphindia.com/states/north-east/4-solar-plants-for-mizoram/cid/1455677" class="nav-link">Four solar plants for Mizoram</a> </h5>
+                          <p class="card-text">
+                            The Mizoram government will construct four solar plants and a solar park in different parts of the state,
+                            to generate 80MW solar power by 2021, officials of the state power and electricity department said.,
+                          </p>
+                    </div>
+                </div>
+
+              
+
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/IOT.jpg' %}" alt="ringing">
+                    <div class="card-body cardcols ">
+                          <h5 class="card-title"> <a href="https://www.telegraphindia.com/states/north-east/4-solar-plants-for-mizoram/cid/1455677" class="nav-link">List of Latest IOT Projects for Engineering Students</a> </h5>
+                          <p class="card-text">Internet of Things, simply termed as ‘IoT’ is an advanced technology which the industries are starting to adapt into their operation. IoT is simply an UI that a user can integrate into almost all the electrical/ electronic devices to transform them into a smarter one..
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                          <iframe  src="https://www.youtube.com/embed/LQPlHec3iBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body cardcols">
+                          <h5 class="card-title"><a href="https://www.youtube.com/channel/UCkSCiotO-AxeHHb-QGSmFFQ" class="nav-link">NIELIT Freshers Social & Felicitation Program 2018</a> </h5>
+                          <p class="card-text">Fresher Social and Felicitation program is an event organized by the staff and students to welcome newcomers in a friendly atmosphere and avoid social evils, to encourage their creative impulses to boost their confidence.It is the day where seniors and juniors finally bond and unite to celebrate being part of the college..
+                          </p>
+                    </div>
+               </div>
+
+
+          </div>
+
+
+              <!-----------------------------iframe video--------------------------------->
+
+                        <!--aspect ratio 21:9 -->
+
+                        <!-----navigation---->
+
+        <div class="container mt-3">
+                  <div class="frame">
+                          <nav class="navbar navbar-dark" style="background-image:url({% static 'img/Blue.jpg' %});background-size:cover; border-radius:2px;">
+                            <div class="container-fluid">
+                                <a href="index.html" class="navbar-brand">
+                                <div class="d-inline-block align-top mr-3">Useful Video</a></div>
+                                <button class="navbar-toggler" data-toggle="collapse" data-target="#NavbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="NavbarCollapse">
+
+                                  <ul class="navbar-nav ml-auto">
+                                      <li class="nav-item">
+                                            <a href="https://www.youtube.com/embed/My31XKJw7zg" target="frame2" class="nav-link  text-light">How to fill up online examination form</a>
+                                      </li>
+                                      <li class="nav-item">
+                                            <a href="https://www.youtube.com/embed/9T3fCT0v2fw" target="frame2" class="nav-link">How to install vb6</a>
+                                      </li>
+                                      <li class="nav-item">
+                                            <a href="imagegallery.html" class="nav-link">How to fill up application form</a>
+                                      </li>
+                                  </ul>
+
+                                </div>
+                           </div>
+                         </nav>
+
+                              <div class="embed-responsive embed-responsive-21by9">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/My31XKJw7zg" name="frame2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                  </div>
+          </div>
+
+                  <!------------------End of Iframe video ------------------->
+
+
+                                  <!--------Card-------->
+
+          <div class="card-deck container mt-5 mb-3 mx-auto">
+                      <div class="card text-center">
+                            <img class="card-img-top" src="{% static 'img/android.jpg' %}" alt="ringing">
+                            <div class="card-body bg-light">
+                                    <h5 class="card-title">Android apps</h5>
+                                    <p class="card-text">Download nielitdiploma app <br></p>
+                                    <a href="https://drive.google.com/open?id=1hR5Vr0bZPcG12neMw1CB5IehcEAa1Jt3" class="btn btn-info text-right">Click here</a>
+                            </div>
+                            </div>
+                            <div class="card text-center">
+                              <img class="card-img-top" height="170" src="{% static 'img/Project.jpg' %}" alt="ringing">
+                              <div class="card-body bg-light">
+                                    <h5 class="card-title">Projects</h5>
+                                    <p class="card-text">Click the button below </p>
+                                    <a href="{% url 'projects:projectMain' %}" class="btn btn-info">Click here</a>
+                              </div>
+                            </div>
+                            <div class="card text-center">
+                              <img class="card-img-top" src="{% static 'img/contactfaculty.jpg' %}" height="170" alt="ringing">
+                              <div class="card-body bg-light">
+                                    <h5 class="card-title">Faculty</h5>
+                                    <p class="card-text">Click the button below</p>
+                                    <a href="{% url 'home:homeFaculty' %}" class="btn btn-info">Click here</a>
+                              </div>
+                            </div>
+          </div>
+
+
+
+                          <!--End of card-->
+
+
+
+
+
+  {% endblock %}

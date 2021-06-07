@@ -1,0 +1,525 @@
+{% extends 'base_layout.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+
+
+
+    <style>
+.dropdown-menu{
+background-color: #fff;
+}
+.dropdown-item{
+color:	  #1875ff;
+}
+.table td a{
+color:white;
+}
+.scrollable{
+height: 400px;
+overflow: scroll;
+}
+</style>
+
+ <body id="home">
+
+
+
+        <!--Header-->
+        <section id="banner">
+        <div class="jumbotron jumbotron-fluid bg-light text-muted text-center">
+          <div class="container">
+            <h1 class="display-3">Electronics</h1>
+            <p class="lead">Department of Electronics and Telecommunication</p>
+          </div>
+      </div>
+      </section>
+      <!--End of Header-->
+
+
+                          <!----Electronic and telecommunication and engineering--->
+
+                          <div class="container my-3 p-4">
+                            <h4 class="text-primary">Diploma in Electronics and Telecommunication Engineering</h4>
+                            <p class="text-mutesd" style="font-size:18px;color:#555;">Diploma in Electronics and Telecommunication Engineering(DETE) is a diploma level of electronics and telecommunication which is one of the popular courses among engineering aspirants which focuses on the basic
+                               elements of electronics.The focus in this discipline is on understanding electronics network and devices,electric magnetic fields,computer fundamentals,communication and control system.It uses the scientific knowledge of the behaviour and effects of electronics to develop conponents,device,systems and equipments.It deals with recent trends in communication technology via wire/wireless networks,circuits design and microcontrollers.</p>
+
+                          </div>
+
+
+                    <!-----syllabus---->
+                    <section id="dcsesyllabus">
+                    <div class="container mt-4">
+                      <ul class="nav nav-pills">
+                        <li><a href="#Home" class="btn btn-success" data-toggle="tab">Home</a></li>
+                        <li><a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-success mx-1">Semester</b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#dcse1" class="dropdown-item"  data-toggle="tab">1 Semester</a></li>
+                              <li><a href="#dcse2" class="dropdown-item"  data-toggle="tab">2 Semester</a></li>
+                              <li><a href="#dcse3" class="dropdown-item" data-toggle="tab">3 Semester</a></li>
+                              <li><a href="#dcse4" class="dropdown-item" data-toggle="tab">4 Semester</a></li>
+                              <li><a href="#dcse5" class="dropdown-item" data-toggle="tab">5 Semester</a></li>
+                              <li><a href="#dcse6" class="dropdown-item" data-toggle="tab">6 Semester</a></li>
+                          </ul>
+                        </li>
+
+
+                                    <!---Download-link--->
+
+                                    <li><a href="#Download" data-toggle="dropdown" class="dropdown-toggle btn btn-success">Download</a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="dcsecoursestructure.pdf" target="_blank" class="dropdown-item">Course Structure</a></li>
+                                        <li><a href="dcsemarkdistribution.pdf" target="_blank" class="dropdown-item">Mark Distribution</a></li>
+                                      </ul>
+                                    </li>
+                      </ul>
+
+                      <div class="tab-content syllabustable">
+                        <div class="tab-pane fade_in active" id="Home">
+                          <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                            <h4 class="text-center my-1 text-muted">Click the semester button to get semester detailed syllabus </h4>
+                              <h4 class="text-center my-1 text-muted">click the download button to download all course structure and mark distribution </h4>
+                          </div>
+                        </div>
+                        </div>
+
+                        <!---Dete  First Semester --->
+
+                        <div class="tab-pane fade" id="dcse1">
+                          <p>Dcse-I</p>
+                          <p>Click the subject name to get details</p>
+                          <table class="table table-bordered table-hover text-dark bg-secondary">
+                            <thead>
+                              <tr>
+                                <th scope="col">slno.</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Cid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td><a href="dcse syllabus details/DCSE1/G101-COMMUNICATION SKILL-I.pdf" target="_blank">Communication Skill</td>
+                                  <td>G101</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td><a href="dcse syllabus details/DCSE1/G103-MATHEMATICS-I.pdf" target="_blank">Mathematics-I</td>
+                                    <td>G103</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td><a href="dcse syllabus details/DCSE1/G106-PHYSICS-I.pdf" target="_blank">Physics-I</td>
+                                      <td>G106</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">4</th>
+                                    <td><a href="dcse syllabus details/DCSE1/G108-CHEMISTRY-I.pdf" target="_blank">Chemistry-I</td>
+                                      <td>G108</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">5</th>
+                                    <td><a href="dcse syllabus details/DCSE1/G201-ENGINEERING DRAWING-I.pdf" target="_blank">Engineering Drawing-I</td>
+                                      <td>G201</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">6</th>
+                                    <td><a href="dcse syllabus details/DCSE1/G203-WORKSHOP Practical-I.pdf" target="_blank">Workshop Practical-I</td>
+                                      <td>G203</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">7</th>
+                                    <td><a href="dcse syllabus details/DCSE1/G205B-COMPUTER PROGRAMMING USING C-I.pdf" target="_blank">Computer Programming Using C-I</td>
+                                      <td>G205</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                        </div>
+
+                        <!---Dete  Second Semester--->
+
+                        <div class="tab-pane fade" id="dcse2">
+                          <p>Dcse-II</p>
+                          <p>Click the subject name to get details</p>
+                          <table class="table table-bordered table-hover table-dark text-dark bg-secondary">
+                            <thead>
+                              <tr>
+                                <th scope="col">slno.</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Cid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td><a href="dcse syllabus details/DCSE2/communication skill-II.pdf" target="_blank">Communication Skill-II</td>
+                                  <td>G102</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td><a href="dcse syllabus details/DCSE2/mathematics-II.pdf" target="_blank">Mathematics-II</td>
+                                    <td>G104</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td><a href="dcse syllabus details/DCSE2/physics-II.pdf" target="_blank">Physics-II</td>
+                                      <td>G107</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">4</th>
+                                    <td><a href="dcse syllabus details/DCSE2/chemistry-II.pdf" target="_blank">Chemistry-II</td>
+                                      <td>G109</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">5</th>
+                                    <td><a href="dcse syllabus details/DCSE2/engineering drawing-II.pdf" target="_blank">Engineering Drawing-II</td>
+                                      <td>G202</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">6</th>
+                                    <td><a href="dcse syllabus details/DCSE2/workshop practical-II.pdf" target="_blank">Workshop Practical-II</td>
+                                      <td>G204</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">7</th>
+                                    <td><a href="dcse syllabus details/DCSE2/engineering mechanics.pdf" target="_blank">Engineering Mechanics</td>
+                                      <td>G206A</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">8</th>
+                                    <td><a href="dcse syllabus details/DCSE2/development of lifeskill-I.pdf" target="_blank">Development of Life Skill-I</td>
+                                      <td>G301</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">9</th>
+                                    <td><a href="dcse syllabus details/DCSE2/professional practices-I.pdf" target="_blank">Professional Practice-I</td>
+                                      <td>CSE507</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                        </div>
+
+                        <!-- Dete third Semester-->
+
+                        <div class="tab-pane fade" id="dcse3">
+                          <p>Dcse-III</p>
+                          <p>Click the subject name to get details</p>
+                          <table class="table table-bordered table-hover table-dark text-dark bg-secondary">
+                            <thead>
+                              <tr>
+                                <th scope="col">slno.</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Cid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td><a href="dcse syllabus details/DCSE3/CSE401/ELECTRICAL CIRCUITS.pdf" target="_blank">Electrical Circuits</td>
+                                  <td>CSE401</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td><a href="dcse syllabus details/DCSE3/CSE402-COMPUTER PROGRAMMING USING C-II.pdf" target="_blank">Computer Programming Using c-II</td>
+                                    <td>CSE402</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td><a href="dcse syllabus details/DCSE3/CSE403-DIGITAL CIRCUITS.pdf" target="_blank">Digital Circuits</td>
+                                      <td>CSE403</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">4</th>
+                                    <td><a href="dcse syllabus details/DCSE3/CSE404-COMPUTER ARCHITECTURE.pdf" target="_blank">Computer Architecture</td>
+                                      <td>CSE404</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">5</th>
+                                    <td><a href="dcse syllabus details/DCS31/CSE405-COMMUNICATION ENGINEERING.pdf" target="_blank">Communication Engineering</td>
+                                      <td>CSE405</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">6</th>
+                                    <td><a href="dcse syllabus details/DCSE3/CSE508-PROFESSIONAL PRACTICES-II.pdf" target="_blank">Professional Practice-II</td>
+                                      <td>CSE508</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">7</th>
+                                    <td><a href="dcse syllabus details/DCSE3/G105-APPLIED MATHEMATICS.pdf" target="_blank">Applied Mathematics</td>
+                                      <td>G105</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">8</th>
+                                    <td><a href="dcse syllabus details/DCSE3/G302-DEVELOPMENT OF LIFE SKILL.pdf" target="_blank">Development of Life Skill-I</td>
+                                      <td>G302</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">9</th>
+                                    <td><a href="dcse syllabus details/DCSE3/G307-SOFTCORE-I.pdf" target="_blank">Soft Core-I</td>
+                                      <td>G307</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                        </div>
+
+                        <!---Dete Fourth Semester ---->
+                        <div class="tab-pane fade" id="dcse4">
+                          <p>Dcse-IV</p>
+                          <p>Click the subject name to get details</p>
+                          <table class="table table-bordered table-hover table-dark text-dark bg-secondary">
+                            <thead>
+                              <tr>
+                                <th scope="col">slno.</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Cid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td><a href="dcse syllabus details/DCSE4/CSE406-DATA STRUCTURE & ALGORITHM.pdf" target="_blank">Data Structure & Algorithm</td>
+                                  <td>CSE406</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td><a href="dcse syllabus details/DCSE4/CSE407-MICROPROCESSOR & INTERFACING.pdf" target="_blank">Microprocessor & Interfacing</td>
+                                    <td>CSE407</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td><a href="dcse syllabus details/DCSE4/CSE409-UNIX OPERATING SYSTEM.pdf" target="_blank">Unix Operating System</td>
+                                      <td>CSE409</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">4</th>
+                                    <td><a href="dcse syllabus details/DCSE4/CSE412-COMPUTER COMMUNICATION & NETWORKING.pdf" target="_blank">Computer Communication & Networking</td>
+                                      <td>CSE412</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">5</th>
+                                    <td><a href="dcse syllabus details/DCSE4/CSE502-OBJECT ORIENTED METHODOLOGY.pdf" target="_blank">Object Oriented Methodology</td>
+                                      <td>CSE502</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">6</th>
+                                    <td><a href="dcse syllabus details/DCSE4/CSE509-PROFESSIONAL PRACTICES – III.pdf" target="_blank">Professional Practice-III</td>
+                                      <td>CSE509</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">7</th>
+                                    <td><a href="dcse syllabus details/DCSE4/CSE514-PC UTILITIES LAB.pdf" target="_blank">PC Utilities Lab</td>
+                                      <td>CSE514</td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+
+
+                    <!---notes--->
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="well">
+                          <h5 class="bg-secondary text-white py-2 text-center">Notes</h5>
+                          <div class="scrollable">
+                          <table class=" table table-sm table-hover text-center">
+                            <tbody>
+                                <tr>
+                                    <td><a href="notes/digital/Digital.pdf" target="_blank">Digital Electronics and Logic Design </a></td>
+                                </tr>
+                              <tr>
+                            <td>Digital Signal Processing</td>
+                          </tr>
+                          <tr>
+                            <td>Digital Circuit</td>
+                          </tr>
+                            <tr>
+                            <td>Data Structure</td>
+                          </tr>
+                            <tr>
+                            <td>Computer Networking</td>
+                          </tr>
+                              <tr>
+                            <td>Mathematics-I</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Operating System</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Operating System</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                          </tbody>
+                          </table>
+                        </div>
+                        </div>
+                        </div>
+
+                        <!---Previous Question--->
+                        <div class="col-md-6 text-center">
+                          <h5 class="bg-secondary text-white py-2">Previous Question</h5>
+                          <div class="scrollable">
+                          <table class=" table table-sm table-hover text-center">
+                            <tbody>
+                              <tr>
+                            <td>Digital Signal Processing</td>
+                          </tr>
+                          <tr>
+                            <td>Digital Circuit</td>
+                          </tr>
+                            <tr>
+                            <td>Data Structure</td>
+                          </tr>
+                            <tr>
+                            <td>Computer Networking</td>
+                          </tr>
+                              <tr>
+                            <td>Mathematics-I</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Operating System</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                              <tr>
+                            <td>Operating System</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Theory of Computing</td>
+                          </tr>
+                              <tr>
+                            <td>Computer Graphics</td>
+                          </tr>
+                          </tbody>
+                          </table>
+                        </div>
+                        </div>
+                      </div>
+                      </div>
+
+
+                      <!--iframe video-->
+
+                        <!--aspect ratio 21:9 -->
+
+                        <!-----navigation---->
+<div class="container my-4">
+<nav class="navbar navbar-dark" style="background-image:url({% static 'img/Blue.jpg' %});background-size:cover; border-radius:2px;">
+<div class="container-fluid">
+    <a href="index.html" class="navbar-brand">
+      <div class="d-inline-block align-top mr-3">Useful Videos</a></div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#NavbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="NavbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a href="https://www.youtube.com/embed/7ukDKVHnac4" target="frame1" class="nav-link">Transistors, How do they work ?</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.youtube.com/embed/JNi6WY7WKAI" target="frame1" class="nav-link">How does a Diode work ?</a>
+              </li>
+              <li class="nav-item">
+                  <a href="https://www.youtube.com/embed/9OVtk6G2TnQ" target="frame1" class="nav-link">How batteries work ?</a>
+                </li>
+
+
+              </ul>
+        </div>
+      </div>
+</nav>
+
+  <div class="embed-responsive embed-responsive-21by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xy4xf3SEwvM" name="frame1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+                      <!---Card column-->
+                      <div class="card-columns container mt-5">
+                        <div class="card">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sMvTC-wlBuM" name="frame1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          <div class="card-body cardcols">
+                            <h5 class="card-title lead">Mittal School Of Business – A Legacy Of Excellence, Carried Forward </h5>
+
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sMvTC-wlBuM" name="frame1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          <div class="card-body cardcols">
+                            <h5 class="card-title">The Finance Minister Himself Inaugurated Our Start Up School.</h5>
+
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sMvTC-wlBuM" name="frame1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                          <div class="card-body cardcols">
+                            <h5 class="card-title">The Finance Minister Himself Inaugurated Our Start Up School.</h5>
+
+                          </div>
+                        </div>
+                        
+
+                      </div>
+
+
+
+
+
+
+{% endblock %}

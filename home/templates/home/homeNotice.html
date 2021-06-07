@@ -1,0 +1,20 @@
+{% extends 'base_layout.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+
+<section id="banner">
+        <div class="jumbotron jumbotron-fluid bg-light text-muted text-center">
+
+           <div class="New">
+           <h2> <a href="#">{{noticeDetails.title}}</a> </h2>
+           <p>{{noticeDetails.body}}</p>
+           <p>{{noticeDetails.date}}</p>
+           </div>
+
+        </div>
+</section>
+
+
+
+{% endblock %}
